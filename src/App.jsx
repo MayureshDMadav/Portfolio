@@ -18,9 +18,9 @@ import Testimonial from './component/testimonials/Testimonial'
       <About/>
       <Experience/>
       <Services/>
-      <Portfolio/>
+      <Portfolio/> 
       <Testimonial/>
-      <Contact/>       
+      <Contact/>  
       <Footer/>
     </div>
   )
