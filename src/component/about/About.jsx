@@ -3,6 +3,7 @@ import './about.css'
 import {FaAward} from 'react-icons/fa'
 import {SlOrganization} from 'react-icons/sl'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import Currentexp from '../typewriter/currentexp'
 import Me from '../../assets/me-about.jpg'
 
 const About = () => {
@@ -29,7 +30,7 @@ const About = () => {
             <article className="about__card">
               <SlOrganization className='about_icon'/>
               <h5>Organizations</h5>
-              <small>Worked with more then 5 Organizations</small>
+              <small>Worked with more then 3 Organizations</small>
             </article>
 
             <article className="about__card">
@@ -40,7 +41,7 @@ const About = () => {
 
             </div>
             <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur quas libero facere numquam aperiam recusandae
+          <Currentexp/>
         </p>
 
         <a href="#contact" className='btn btn-primary' >Let's Talk</a>
