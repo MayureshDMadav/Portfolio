@@ -102,6 +102,19 @@
         "restricted":"No",
         "webLink":"https://webapp-p9go.onrender.com/",
         "src":"portfolioimg/portfolio7.png"
+    },
+    {
+        "title":"My Portfolio",
+        "frontend": "React , Typescript",
+        "backend":"NA",
+        "Tools":"Visual Code, GIT",
+        "status":"Active",
+        "access":"Public",
+        "worked":"Developed",
+        "gitUrl":"https://github.com/MayureshDMadav/Portfolio",
+        "restricted":"No",
+        "webLink":"https://portfolio-jkip.onrender.com/",
+        "src":"portfolioimg/portfolio8.png"
     }
 
 ]
