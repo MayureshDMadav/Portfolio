@@ -1,0 +1,23 @@
+[
+
+    {
+        "Name":"madhuri",
+        "Image":"avatar/avatar1.jpg",
+        "Description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat culpa quam, quis ipsam excepturi ipsa rem numquam quo maiores sit cupiditate facere qui ullam, reiciendis aliquid, adipisci molestias?"
+    },
+    {
+        "Name":"reshma",
+        "Image":"avatar/avatar2.jpg",
+        "Description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat culpa quam, quis ipsam excepturi ipsa rem numquam quo maiores sit cupiditate facere qui ullam, reiciendis aliquid, adipisci molestias?"
+    },
+    {
+        "Name":"hemamalini",
+        "Image":"avatar/avatar3.jpg",
+        "Description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat culpa quam, quis ipsam excepturi ipsa rem numquam quo maiores sit cupiditate facere qui ullam, reiciendis aliquid, adipisci molestias?"
+    },
+    {
+        "Name":"mandyMartin",
+        "Image":"avatar/avatar4.jpg",
+        "Description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat culpa quam, quis ipsam excepturi ipsa rem numquam quo maiores sit cupiditate facere qui ullam, reiciendis aliquid, adipisci molestias?"
+    }
+]

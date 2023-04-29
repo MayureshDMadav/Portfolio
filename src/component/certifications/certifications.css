@@ -1,5 +1,6 @@
-.container.testimonial__container{
-    width: 40%;
+.container.certifications__container{
+    width: 30%;
+    height: 100%;
 }
 
 .client__avtar{
@@ -11,7 +12,7 @@
     border: 0.4rem solid var(--color-primary-variant);
 }
 
-.testimonial{
+.certifications{
     background: var(--color-bg-variant);
     text-align: center;
     padding: 2rem;
@@ -29,14 +30,14 @@
 
 
 @media screen and (max-width:1024px) {
-    .container.testimonial__container{
+    .container.certifications__container{
         width: 60%;
     }
 
 }
 
 @media screen and (max-width:600px) {
-    .container.testimonial__container{
+    .container.certifications__container{
         width: var(--container-width-sm);
     }
 

@@ -7,8 +7,8 @@ import Header from './component/header/Header'
 import Nav from './component/nav/Nav'
 import Footer from './component/footer/Footer'
 import Portfolio from './component/portfolio/Portfolio'
-import Testimonial from './component/testimonials/Testimonial'
-
+import Certifications from './component/certifications/Certifications'
+import Testimonial from './component/testimonial/Testimonial'
 
  const App = ()=>{
   return (
@@ -19,6 +19,7 @@ import Testimonial from './component/testimonials/Testimonial'
       <Experience/>
       <Services/>
       <Portfolio/> 
+      <Certifications/>
       <Testimonial/>
       <Contact/>  
       <Footer/>

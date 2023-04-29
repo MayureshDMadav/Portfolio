@@ -2,22 +2,16 @@ import React from 'react'
 import './testimonial.css'
 import {Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import imageRender from './testinomial.json'
+import testimonial from './testimonial.json'
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
-
-
 const Testimonial = () => {
 
-
-  console.log(imageRender[0].php)
-
   return (
-    <section id='certification'>
-      <h5>Certification & Knowledge</h5>
-      <h2>Certifications & Appreciations</h2>
+    <section id='testimonial'>
+      <h5>Review from Teams</h5>
+      <h2>Testimonials</h2>
       
         <Swiper
         modules={[ Pagination]}
@@ -28,14 +22,17 @@ const Testimonial = () => {
 
         >
        
-          {imageRender.map(data =>{
+          {testimonial.map(data =>{
             return(
-              <SwiperSlide className="testimonial"  
+              <SwiperSlide className="testimonials"  
               >
               <span>
-              <h5 className='cleint_name'>{data.language}</h5>
+              <h5 className='cleint_name'>{data.Name}</h5>
+              <div className="client__avtar">
+              <img src={data.Image} alt="img" />    
+              </div>
               <small className='client__review'>
-              <img style={{background:'white'}} src={data.certificate} alt="img" />      
+              <p>{data.Description}</p>
               </small>
               </span>
               </SwiperSlide>
