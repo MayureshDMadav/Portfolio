@@ -1,0 +1,27 @@
+[
+   
+    {
+        "id":"Development",
+        "1":"Creating various simulations on the basis of Programming language.",
+        "2":"Developing various automation tool to speed up manual processes.",
+        "3":"Developing and maintaining Documentation Portal on platform like Docusourus and Swagger UI (build on python).",
+        "4":"Plugin maintainence example: Woo-commerce, Magento etc.",
+        "5":"Personal project developement websites."
+    },
+    {
+        "id":"Technical Support",
+        "1":"Trobuleshooting Error basis on various platform.",
+        "2":"Providing Technical consulting to Team memebers.",
+        "3":"Use of tools like POSTMAN for debugging and testing REST API's.",
+        "4":"Collbarating with Program Managers to provide feedback and understanding on new product and enhancement.",
+        "5":"Direct and Plugin Integration assistance."
+    },
+    {
+        "id":"Extra's",
+        "1":"Creating Doucmentation of new API's that are required to be implemented and understandable by team.",
+        "2":"Working on maintianing communication on techincal aspects between various team members.",
+        "3":"Providing ideas and creating roadmaps on how to make current processes faster and easy.",
+        "4":"Payment Gateway knowledge is an added bonus which allow to understand the merchant requirement and share it to respective stakeholders for developement.",
+        "5":"Assisting on various internal development task assigned by team members."
+    }
+]
