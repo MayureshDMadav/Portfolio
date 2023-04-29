@@ -40,7 +40,7 @@ const Experience = () => {
                   <BsBookmarkCheckFill className='experience__details-icon'/>
                   <div>
                   <h4>{data.language}</h4>
-                  <h6>{data.Description}</h6>
+                  <h6 className="text-light">{data.Description}</h6>
                   <small className='text-light'><Rating data={data.rating}/></small>
                   </div>
                 </article>
