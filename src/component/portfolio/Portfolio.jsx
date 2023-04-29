@@ -1,74 +1,42 @@
 import React from 'react'
 import './portfolio.css'
-import img from '../../assets/portfolio1.jpg'
-import img1 from '../../assets/portfolio2.jpg'
-import img2 from '../../assets/portfolio3.jpg'
-import img3 from '../../assets/portfolio4.jpg'
-import img4 from '../../assets/portfolio5.png'
+import portfolio from './portfolio.json'
 
 const Portfolio = () => {
+
+  console.log()
+
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={img} alt="img" />
-          </div>
-            <h3>This is a portfolio item title</h3>
-            <div className="portfolil__item-cta">
-            <a href="github.com" className='btn'>GitHub</a>
-            <a href="github.com" className='btn btn-primary' target='_blank'>Live Demo</a> 
+        {portfolio.map(data=>{
+          return(
+            <article className="portfolio__item">
+            <div className="portfolio__item-image">
+            <img src={data.src} alt="img" />
             </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={img1} alt="img" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-            <div className="portfolil__item-cta">
-            <a href="github.com" className='btn'>GitHub</a>
-            <a href="github.com" className='btn btn-primary' target='_blank'>Live Demo</a> 
-            </div>
-         
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={img2} alt="img" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-            <div className="portfolil__item-cta">
-            <a href="github.com" className='btn'>GitHub</a>
-            <a href="github.com" className='btn btn-primary' target='_blank'>Live Demo</a> 
-            </div>
-         
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={img3} alt="img" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-            <div className="portfolil__item-cta">
-            <a href="github.com" className='btn'>GitHub</a>
-            <a href="github.com" className='btn btn-primary' target='_blank'>Live Demo</a> 
-            </div>
-         
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={img4} alt="img" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-            <div className="portfolil__item-cta">
-            <a href="github.com" className='btn'>GitHub</a>
-            <a href="github.com" className='btn btn-primary' target='_blank'>Live Demo</a> 
-            </div>
-         
-        </article>
-       
-        
+              <h3 style={{marginBottom:'0.5rem'}}>{data.title}</h3>
+              <ul>
+                <li>
+                  <p> <h5>Frontend : {data.frontend}</h5></p>
+                  <p><h5>Backend : {data.backend}</h5></p>
+                  <p><h5>Tools : {data.Tools}</h5></p>
+                  <p><h5>Status : <span Style={`${data.status === 'Active'?'color:green;':'color:red;'}`}>{data.status}</span></h5></p>
+                  <p><h5>Repo Access : <span Style={`${data.access === 'Private'?'color:red;':'color:green;'}`}>{data.access}</span></h5></p>
+                  <p><h5>Worked : {data.worked}</h5></p>
+                </li>
+              </ul>
+              <div className="portfolil__item-cta">
+              <a href={data.gitUrl} className='btn'Style={`${data.gitUrl === 'NA'? "display:none":""}`} >GitHub</a>
+              <a href={data.webLink} className='btn btn-primary' Style={`${data.restricted === 'Yes'? "display:none":""}`}   target='_blank'>Live Demo</a> 
+              </div>
+          </article> 
+    
+          )
+        })}
       </div>
     </section>
   )

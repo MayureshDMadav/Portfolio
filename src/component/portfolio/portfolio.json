@@ -1,0 +1,107 @@
+[
+    {
+        "title":"SIMPL Documentation Portal",
+        "frontend": "Docusaurus , ReactJS , SwaggerUI",
+        "backend":"Python",
+        "Tools":"GIT , Docker , CircleCLI",
+        "status":"Active",
+        "access":"Private",
+        "worked":"Contributor",
+        "restricted":"Yes",
+        "gitUrl":"https://github.com/GetSimpl/documentation-pipeline",
+        "webLink":"https://docs.getsimpl.com/integration/",
+        "src":"portfolioimg/portfolio1.png"
+    },
+    {
+        "title":"CustomAPP Automation",
+        "frontend": "NA",
+        "backend":"Python , Chromium Driver Manager, Selenuim",
+        "Tools":"GIT , Python Libraries, Visual Code",
+        "status":"Active",
+        "access":"Public",
+        "worked":"Developed",
+        "gitUrl":"https://github.com/MayurMadav/customAPPautomate",
+        "webLink":"#",
+        "restricted":"No",
+        "src":"portfolioimg/portfolio2.png"
+    },
+    {
+        "title":"Button Simulator",
+        "frontend": "React JS, MaterialUI",
+        "backend":"NA",
+        "Tools":"GIT , Visual Code ",
+        "status":"Active",
+        "access":"Public",
+        "worked":"Developed",
+        "gitUrl":"https://github.com/MayureshDMadav/ButtonSimulator",
+        "webLink":"https://buttonsimulator.onrender.com/",
+        "restricted":"No",
+        "src":"portfolioimg/portfolio3.png"
+    },
+    {
+        "title":"SafexPay Documentation Portal",
+        "frontend": "React JS, YAML",
+        "backend":"Node JS",
+        "Tools":"Visual Code ",
+        "status":"Active",
+        "access":"Private",
+        "worked":"Contributor",
+        "gitUrl":"NA",
+        "restricted":"No",
+        "webLink":"https://docs.safexpay.com/",
+        "src":"portfolioimg/portfolio4.png"
+    },
+    {
+        "title":"Om Ganjanans Snacks",
+        "frontend": "HTML , CSS",
+        "backend":"Wordpress, PHP",
+        "Tools":"Elemnator , Gloria Food System, Visual Code ",
+        "status":"Inactive",
+        "access":"NA",
+        "worked":"Developed",
+        "gitUrl":"NA",
+        "restricted":"No",
+        "webLink":"http://omgajanansnacks.in/",
+        "src":"portfolioimg/portfolio5.png"
+    },
+    {
+        "title":"Chintamani Jewellers",
+        "frontend": "HTML , CSS",
+        "backend":"Wordpress, PHP",
+        "Tools":"Elemnator , Visual Code ",
+        "status":"Inactive",
+        "access":"NA",
+        "worked":"Developed",
+        "gitUrl":"NA",
+        "restricted":"No",
+        "webLink":"http://chintamanijewellers.co.in/",
+        "src":"portfolioimg/portfolio5.png"
+    },
+    {
+        "title":"Computer Webshop (College)",
+        "frontend": ".Net, HTML , CSS, ",
+        "backend":"C#, Microsoft SQL server 2011",
+        "Tools":"Visual Studio 2015, EntityFramework",
+        "status":"Inactive",
+        "access":"NA",
+        "worked":"Developed",
+        "gitUrl":"NA",
+        "restricted":"No",
+        "webLink":"NA",
+        "src":"portfolioimg/portfolio6.png"
+    },
+    {
+        "title":"WebAPP Contenent (College)",
+        "frontend": "React JS, MaterialUI",
+        "backend":"Rapid API",
+        "Tools":"Visual Code",
+        "status":"Active",
+        "access":"Public",
+        "worked":"Developed",
+        "gitUrl":"https://github.com/MayureshDMadav/webcontent",
+        "restricted":"No",
+        "webLink":"https://webapp-p9go.onrender.com/",
+        "src":"portfolioimg/portfolio7.png"
+    }
+
+]

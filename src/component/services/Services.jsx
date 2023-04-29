@@ -1,6 +1,4 @@
 import React from 'react'
-import {BsCheck} from 'react-icons/bs'
-import {TiTickOutline} from 'react-icons/ti'
 import {BsDot} from 'react-icons/bs'
 import services from './services.json'
 import './services.css'
