@@ -2,20 +2,22 @@ import React from 'react'
 import './testimonial.css'
 import {Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import imageRender from './testinomial.json'
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import img from '../../assets/avatar1.jpg'
-import img2 from '../../assets/avatar2.jpg'
-import img3 from '../../assets/avatar3.jpg'
-import img4 from '../../assets/avatar4.jpg'
+
 
 
 const Testimonial = () => {
+
+
+  console.log(imageRender[0].php)
+
   return (
-    <section id='testimonial'>
-      <h5>Review from Clients</h5>
-      <h2>Testimonials</h2>
+    <section id='certification'>
+      <h5>Certification & Knowledge</h5>
+      <h2>Certifications & Appreciations</h2>
       
         <Swiper
         modules={[ Pagination]}
@@ -25,53 +27,22 @@ const Testimonial = () => {
         className="container testimonial__container"
 
         >
-        <SwiperSlide className="testimonial"  
-        >
-          <div className="client__avtar">
-            <img src={img} alt="img" />          
-          </div>
-          <h5 className='cleint_name'>Ernes Achiever</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate fugiat officia nam minus excepturi quae, repellendus eligendi, veritatis temporibus quia exercitationem sapiente quaerat dolorem quas, aperiam iusto quam corporis.
-            </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial"
        
-        >
-          <div className="client__avtar">
-            <img src={img2} alt="img" />
-           
-          </div>
-          <h5 className='cleint_name'>Ernes Achiever</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate fugiat officia nam minus excepturi quae, repellendus eligendi, veritatis temporibus quia exercitationem sapiente quaerat dolorem quas, aperiam iusto quam corporis.
-            </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial"
-   
-        >
-          <div className="client__avtar">
-            <img src={img3} alt="img" />
-           
-          </div>
-          <h5 className='cleint_name'>Ernes Achiever</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate fugiat officia nam minus excepturi quae, repellendus eligendi, veritatis temporibus quia exercitationem sapiente quaerat dolorem quas, aperiam iusto quam corporis.
-            </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial"
-      
-      
-        >
-          <div className="client__avtar">
-            <img src={img4} alt="img" />
-           
-          </div>
-          <h5 className='cleint_name'>Ernes Achiever</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate fugiat officia nam minus excepturi quae, repellendus eligendi, veritatis temporibus quia exercitationem sapiente quaerat dolorem quas, aperiam iusto quam corporis.
-            </small>
-        </SwiperSlide>
+          {imageRender.map(data =>{
+            return(
+              <SwiperSlide className="testimonial"  
+              >
+              <span>
+              <h5 className='cleint_name'>{data.language}</h5>
+              <small className='client__review'>
+              <img style={{background:'white'}} src={data.certificate} alt="img" />      
+              </small>
+              </span>
+              </SwiperSlide>
+
+            )
+
+          })}
         </Swiper>
       
     </section>
