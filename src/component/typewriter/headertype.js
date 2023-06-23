@@ -1,19 +1,17 @@
-import React from 'react'
-import { useTypewriter,Cursor } from 'react-simple-typewriter'
+import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
- function Headertype ()  {
-    const [text] = useTypewriter({
-        words:['Intergration Engineer','PG Technician'],
-        loop:{},    
-    })
+function Headertype() {
+  const [text] = useTypewriter({
+    words: ["Software Engineer", "Integration Engineer"],
+    loop: {},
+  });
   return (
     <>
-   {text}
-    <Cursor/>
+      {text}
+      <Cursor />
     </>
-
-  )
+  );
 }
 
-
-export default Headertype
+export default Headertype;
