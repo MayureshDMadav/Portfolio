@@ -1,31 +1,34 @@
 [
-
-    {
-        "language":"React",
-        "certificate":"certificates/reactjs.svg"
-    },
-    {
-        "language":"JAVA",
-        "certificate":"certificates/java.svg"
-    },
-    {
-        "language":"PHP",
-        "certificate":"certificates/PHP.svg"
-    },
-    {
-        "language":"Python",
-        "certificate":"certificates/python.svg"
-    },
-    {
-        "language":"NetTech India",
-        "certificate":"certificates/nettechIndia.png"
-    },
-    {
-        "language":"ITGenius",
-        "certificate":"certificates/ITgenius.png"
-    },
-    {
-        "language":"Employee of the Quatar award",
-        "certificate":"certificates/safexpay.png"
-    }
+  {
+    "language": "React",
+    "certificate": "certificates/reactjs.svg"
+  },
+  {
+    "language": "JAVA",
+    "certificate": "certificates/java.svg"
+  },
+  {
+    "language": "PHP",
+    "certificate": "certificates/PHP.svg"
+  },
+  {
+    "language": "Python",
+    "certificate": "certificates/python.svg"
+  },
+  {
+    "language": "NetTech India",
+    "certificate": "certificates/nettechIndia.png"
+  },
+  {
+    "language": "ITGenius",
+    "certificate": "certificates/ITgenius.png"
+  },
+  {
+    "language": "Employee of the Quatar award",
+    "certificate": "certificates/safexpay.png"
+  },
+  {
+    "language": "freecodecamp",
+    "certificate": "certificates/freecodecamp.png"
+  }
 ]
