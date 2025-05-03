@@ -13,7 +13,7 @@ const Header = () => {
       <h5>Hello Myself</h5>
       <h1>Mayuresh D. Madav <a href="https://github.com/MayureshDMadav" target='_blank'><FaGithub/></a> </h1> 
       <h5 className="text-light">Worked on Designations</h5>
-      <h5 className="text-light">Sr. <Headertype/></h5>
+      <h5 className="text-light"><Headertype/></h5>
       <Cta/>
       <Headersocial/>
       <div className="me">

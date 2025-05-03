@@ -1,5 +1,18 @@
 [
     {
+        "title":"Gokwik Merchant Dashboard",
+        "frontend": "React ,Ant UI",
+        "backend":"Node Js",
+        "Tools":"BitBucket ,Docker ,Jenkins",
+        "status":"Active",
+        "access":"Private",
+        "worked":"Contributor",
+        "restricted":"Yes",
+        "gitUrl":"NA",
+        "webLink":"https://dashboard.gokwik.co/",
+        "src":"portfolioimg/gokwikDashboard.png"
+    },
+    {
         "title":"SIMPL Documentation Portal",
         "frontend": "Docusaurus , ReactJS , SwaggerUI",
         "backend":"Python",
@@ -8,7 +21,7 @@
         "access":"Private",
         "worked":"Contributor",
         "restricted":"Yes",
-        "gitUrl":"https://github.com/GetSimpl/documentation-pipeline",
+        "gitUrl":"NA",
         "webLink":"https://docs.getsimpl.com/integration/",
         "src":"portfolioimg/portfolio1.png"
     },

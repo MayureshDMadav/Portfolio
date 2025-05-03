@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function Headertype() {
   const [text] = useTypewriter({
-    words: ["Integration Engineer"],
+    words: ["Sr. Integration Engineer","Software Developement Engineer"],
     loop: {},
   });
   return (

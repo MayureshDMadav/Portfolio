@@ -1,22 +1,30 @@
 [
     {
-        "language":"HTML",
+        "language":"HTML & CSS & Tailwind Css",
         "rating":"5"
+    },     
+    {
+        "language":"React",
+        "rating":"4.5"
     },
     {
-        "language":"Javascript",
+        "language":"Javascript && Typescript",
+        "rating":"4"
+    },
+    {
+        "language":"Swagger UI",
+        "rating":"3"
+    },
+    {
+        "language":"ANT UI",
+        "rating":"4"
+    },
+    {
+        "language":"Svelte",
         "rating":"4"
     },
     {
         "language":"Material UI",
-        "rating":"5"
-    },
-    {
-        "language":"CSS",
         "rating":"4"
-    },
-    {
-        "language":"React",
-        "rating":"4.5"
     }
 ]

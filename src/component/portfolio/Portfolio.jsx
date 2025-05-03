@@ -4,8 +4,6 @@ import portfolio from './portfolio.json'
 
 const Portfolio = () => {
 
-  console.log()
-
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
@@ -29,10 +27,10 @@ const Portfolio = () => {
                   <p><h5>Worked : {data.worked}</h5></p>
                 </li>
               </ul>
-              <div className="portfolil__item-cta">
+              {/* <div className="portfolil__item-cta">
               <a href={data.gitUrl} className='btn'Style={`${data.gitUrl === 'NA'? "display:none":""}`} >GitHub</a>
               <a href={data.webLink} className='btn btn-primary' Style={`${data.restricted === 'Yes'? "display:none":""}`}   target='_blank'>Live Demo</a> 
-              </div>
+              </div> */}
           </article> 
     
           )
