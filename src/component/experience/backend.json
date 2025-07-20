@@ -1,31 +1,31 @@
 [
-    {
-        "language":"Python",
-        "Description":"Flask, DJango",
-        "rating":"4"
-    },
-    {
-        "language":"PHP",
-        "Description":"PHP Core",
-        "rating":"4"
-    },
-    {
-        "language":"JAVA",
-        "Description":"Spring, Hibernate, Structs, CoreJava",
-        "rating":"3"
-    },
-    {
-        "language":"Node JS",
-        "Description":"Express JS, PUG",
-        "rating":"3"
-    },
-    {
-        "language":"C#",
-        "Description":"Dictionary, MVC, Basic Database Connectivity",
-        "rating":"2"
-    },
-    {
-        "language":"MySQL",
-        "rating":"4"
-    }
+  {
+    "language": "Python",
+    "Description": "Flask, DJango",
+    "rating": "4"
+  },
+  {
+    "language": "PHP",
+    "Description": "PHP Core",
+    "rating": "4"
+  },
+  {
+    "language": "JAVA",
+    "Description": "Spring, Hibernate, Structs, CoreJava",
+    "rating": "3"
+  },
+  {
+    "language": "Node JS",
+    "Description": "Express JS, PUG",
+    "rating": "3"
+  },
+  {
+    "language": "C#",
+    "Description": "Dictionary, MVC, Basic Database Connectivity",
+    "rating": "2"
+  },
+  {
+    "language": "MySQL & PostgreSQL",
+    "rating": "4"
+  }
 ]

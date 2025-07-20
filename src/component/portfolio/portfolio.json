@@ -1,7 +1,20 @@
 [
+     {
+        "title":"Gokwik Checkout",
+        "frontend": "Svelte",
+        "backend":"Go-lang",
+        "Tools":"BitBucket ,Docker ,Jenkins",
+        "status":"Active",
+        "access":"Private",
+        "worked":"Contributor",
+        "restricted":"Yes",
+        "gitUrl":"NA",
+        "webLink":"https://dashboard.gokwik.co/",
+        "src":"portfolioimg/checkout.png"
+    },
     {
         "title":"Gokwik Merchant Dashboard",
-        "frontend": "React ,Ant UI",
+        "frontend": "React , Typescript, Ant-UI",
         "backend":"Node Js",
         "Tools":"BitBucket ,Docker ,Jenkins",
         "status":"Active",
