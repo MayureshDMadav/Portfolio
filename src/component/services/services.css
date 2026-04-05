@@ -1,71 +1,145 @@
-.services_container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 1rem 0;
 }
 
-.service{
-    background:var(--color-bg-variant);
-    border-radius:  0 0 2rem 2rem;
-    border: 1px solid var(--color-primary);
-    transition: var(--transistion);
+.service {
+  background: rgba(12, 12, 20, 0.4);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border-radius: 8px; /* Sharp professional edges */
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease, transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 
-.service:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+.service:hover {
+  background: rgba(18, 18, 28, 0.5);
+  border-color: rgba(255, 255, 255, 0.08); /* Minimalist border highlight */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 20px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-6px);
 }
 
-.service_head{
-    background:var(--color-primary);
-    padding: 2rem;
-    border-radius:  0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+.service_head {
+  padding: 2.5rem 2rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle separator instead of block color */
+  position: relative;
 }
 
-.service_head h3{
-    color: var(--color-bg);
-    font-size: 1rem;
-    text-align: center;
+/* Subtle top glow bar instead of ugly big block */
+.service_head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-primary);
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
 }
 
-.service__list{
-    padding: 2rem;
+.service:hover .service_head::before {
+  opacity: 1;
 }
 
-.service__list li{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
+.service_head h3 {
+  color: var(--color-white);
+  font-size: 0.95rem;
+  text-align: left; /* Left align for professional documentation look */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
-.service__list-icon{
-    color-scheme: var(--color-primary);
-    margin-top: 2px;
+.service__list {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.service__list p{
-    font-size: 0.9rem;
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
 }
 
-@media screen and (max-width:1024px) {
-    .services_container{
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-
-    .service{
-        height: auto;
-    }
-
-
+.service:hover .service__list li {
+  opacity: 1;
 }
 
-@media screen and (max-width:600px) {
-    .services_container{
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
- 
+.service__list li:hover {
+  transform: translateX(6px); /* Very slight interaction slide */
+}
+
+.service__list-icon {
+  color: var(--color-primary);
+  margin-top: 5px; /* Align deeply to text line-height */
+  font-size: 1rem;
+  opacity: 0.5;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service__list li:hover .service__list-icon {
+  opacity: 1;
+}
+
+.service__list p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-light);
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Cinematic Entrance Animation */
+.animate-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-element.show-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pop-in {
+  transform: scale(0.95) translateY(20px); /* Toned down from bouncy scale(0.8) */
+}
+
+.pop-in.show-animation {
+  transform: scale(1) translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+  .services_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services_container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .service_head {
+    padding: 2rem 1.5rem 1rem;
+  }
+  .service__list {
+    padding: 1.5rem;
+  }
 }

@@ -11,22 +11,22 @@ import Certifications from './component/certifications/Certifications'
 import Testimonial from './component/testimonial/Testimonial'
 import ParticleBackground from './component/particles/ParticleBackground'
 
- const App = ()=>{
+const App = () => {
   return (
     <div>
-      <ParticleBackground/>
-      <Header/>
-      <Nav/>
-      <About/>
-      <Experience/>
-      <Services/>
-      <Portfolio/> 
-      <Certifications/>
-      <Testimonial/>
-      <Contact/>  
-      <Footer/>
+      <ParticleBackground />
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Certifications />
+      {/* <Testimonial/> */}
+      <Contact />
+      <Footer />
     </div>
   )
- }
+}
 
 export default App

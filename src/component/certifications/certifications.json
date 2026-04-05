@@ -4,6 +4,10 @@
     "certificate": "certificates/reactjs.svg"
   },
   {
+    "certificate": "certificates/mern.png",
+    "language": "MERN Stack"
+  },
+  {
     "language": "JAVA",
     "certificate": "certificates/java.svg"
   },

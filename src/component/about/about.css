@@ -30,33 +30,51 @@
     gap: 1.5rem;
 }
 
-.about__card{
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
+.about__card {
+    background: rgba(12, 12, 20, 0.4);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Sharp professional edges */
     padding: 2rem;
     text-align: center;  
-    transition: var(--transistion);
+    transition: background 0.4s ease, border-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.about__card:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
+.about__card:hover {
+    background: rgba(18, 18, 28, 0.5);
+    border-color: rgba(255, 255, 255, 0.08); /* Minimalist highlight */
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 20px 40px rgba(0, 0, 0, 0.6);
+    transform: translateY(-6px);
 }
 
-.about_icon{
-    color: var(--color-primary);
+.about_icon {
+    color: var(--color-light);
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, color 0.3s ease;
 }
 
-.about__card h5{
-    font-size: 0.96rem;
+.about__card:hover .about_icon {
+    color: var(--color-white);
+    opacity: 1;
 }
 
-.about__card small{
+.about__card h5 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+}
+
+.about__card small {
     font-size: 0.7rem;
     color: var(--color-light);
+    opacity: 0.7;
 }
 
 .about__content p{
@@ -103,4 +121,22 @@
     }
 }
 
+/* Cinematic Entrance Animation for Cards */
+.animate-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+.animate-element.show-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pop-in {
+  transform: scale(0.95) translateY(20px);
+}
+
+.pop-in.show-animation {
+  transform: scale(1) translateY(0);
+}
