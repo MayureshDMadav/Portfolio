@@ -9,10 +9,12 @@ import Footer from './component/footer/Footer'
 import Portfolio from './component/portfolio/Portfolio'
 import Certifications from './component/certifications/Certifications'
 import Testimonial from './component/testimonial/Testimonial'
+import ParticleBackground from './component/particles/ParticleBackground'
 
  const App = ()=>{
   return (
     <div>
+      <ParticleBackground/>
       <Header/>
       <Nav/>
       <About/>
