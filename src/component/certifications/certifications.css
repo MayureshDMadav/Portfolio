@@ -1,7 +1,8 @@
 .container.certifications__container {
   width: 45%;
   height: 100%;
-  padding-bottom: 3.5rem; /* Space for pagination dots */
+  padding-bottom: 3.5rem;
+  /* Space for pagination dots */
 }
 
 /* Mature Glass Panel */
@@ -10,7 +11,8 @@
   backdrop-filter: blur(20px) saturate(140%);
   -webkit-backdrop-filter: blur(20px) saturate(140%);
   padding: 2.5rem;
-  border-radius: 8px; /* Sharp edges */
+  border-radius: 8px;
+  /* Sharp edges */
   border: 1px solid rgba(255, 255, 255, 0.04);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 20px 40px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -41,22 +43,26 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+  object-fit: fill;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08); /* Minimal frame */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* Minimal frame */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .client__review img {
   width: 100%;
   display: block;
-  background: #ffffff; /* White background to ensure certificate clarity */
+  background: #ffffff;
+  /* White background to ensure certificate clarity */
   filter: grayscale(15%) contrast(105%);
   transition: filter 0.5s ease, transform 0.5s ease;
 }
 
 .certifications:hover .client__review img {
-  filter: grayscale(0%) contrast(100%); /* Bloom into full color */
+  filter: grayscale(0%) contrast(100%);
+  /* Bloom into full color */
   transform: scale(1.02);
 }
 
@@ -95,12 +101,12 @@
 
 @media screen and (max-width: 1024px) {
   .container.certifications__container {
-      width: 70%;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .container.certifications__container {
-      width: 90%;
+    width: 90%;
   }
 }
