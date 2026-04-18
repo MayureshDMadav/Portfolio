@@ -1,18 +1,71 @@
 {
-  "name": ["Mayuresh", "Madav"],
+  "name": [
+    "Mayuresh",
+    "Madav"
+  ],
   "title": "Senior Frontend Engineer",
   "contact": {
     "phone": "+91 82869 41557",
     "email": "mayureshmadav@gmail.com",
-    "portfolio": { "label": "portfolio-jkip.onrender.com", "href": "https://portfolio-jkip.onrender.com" },
-    "github": { "label": "github.com/MayureshDMadav", "href": "https://github.com/MayureshDMadav" },
-    "linkedin": { "label": "linkedin.com/in/MayureshDMadav", "href": "https://linkedin.com/in/MayureshDMadav" }
+    "portfolio": {
+      "label": "portfolio-jkip.onrender.com",
+      "href": "https://portfolio-jkip.onrender.com"
+    },
+    "github": {
+      "label": "github.com/MayureshDMadav",
+      "href": "https://github.com/MayureshDMadav"
+    },
+    "linkedin": {
+      "label": "www.linkedin.com/in/mayuresh-madav-3761921a0/",
+      "href": "https://linkedin.com/in/MayureshDMadav"
+    }
   },
   "skills": [
-    { "category": "Frontend", "tags": ["JavaScript", "React", "Next.js", "Svelte", "TypeScript", "HTML", "CSS", "Tailwind"] },
-    { "category": "Backend & DB", "tags": ["Node.js", "Python", "PostgreSQL", "MySQL", "Firebase", "Prisma"] },
-    { "category": "Libraries & Tools", "tags": ["Ant Design", "Docusaurus", "Swagger", "Docker", "Git", "JIRA", "Postman", "New Relic"] },
-    { "category": "Cloud & CI", "tags": ["Netlify", "Render", "Jenkins"] }
+    {
+      "category": "Frontend",
+      "tags": [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Svelte",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Tailwind"
+      ]
+    },
+    {
+      "category": "Backend & DB",
+      "tags": [
+        "Node.js",
+        "Python",
+        "PostgreSQL",
+        "MySQL",
+        "Firebase",
+        "Prisma"
+      ]
+    },
+    {
+      "category": "Libraries & Tools",
+      "tags": [
+        "Ant Design",
+        "Docusaurus",
+        "Swagger",
+        "Docker",
+        "Git",
+        "JIRA",
+        "Postman",
+        "New Relic"
+      ]
+    },
+    {
+      "category": "Cloud & CI",
+      "tags": [
+        "Netlify",
+        "Render",
+        "Jenkins"
+      ]
+    }
   ],
   "certifications": [
     "freeCodeCamp — Web Design",

@@ -74,13 +74,32 @@ const CSS = `
     margin-bottom: 0.25rem;
   }
   .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    line-height: 1.4;
+  }
+  .contact-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+  .contact-text { display: flex; flex-direction: column; }
+  .contact-label {
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #6a6660;
+    margin-bottom: 1px;
+  }
+  .contact-value {
     font-size: 0.74rem;
     color: #c8c4be;
-    line-height: 1.5;
     word-break: break-all;
   }
-  .contact-item a { color: #c8c4be; text-decoration: none; }
-  .contact-item a:hover { color: var(--accent); }
+  .contact-value a { color: #c8c4be; text-decoration: none; }
+  .contact-value a:hover { color: var(--accent); }
   .skill-group { display: flex; flex-direction: column; gap: 0.45rem; }
   .skill-row { display: flex; flex-direction: column; gap: 0.18rem; }
   .skill-cat {
@@ -262,19 +281,63 @@ function Sidebar({ data }) {
         <div className="r-title">{data.title}</div>
       </div>
 
-      <div className="s-section" style={{ marginTop: '0 !important' }}>
+      <div className="s-section">
         <div className="s-label">Contact</div>
-        <div className="contact-item">{data.contact.phone}</div>
+
         <div className="contact-item">
-          <a href={`mailto:${data.contact.email}`}>{data.contact.email}</a>
-        </div>
-        {["portfolio", "github", "linkedin"].map((k) => (
-          <div className="contact-item" key={k}>
-            <a href={data.contact[k].href} target="_blank" rel="noreferrer">
-              {data.contact[k].label}
-            </a>
+          <svg className="contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.8 19.8 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.13 1 .36 1.98.71 2.91a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.17-1.17a2 2 0 012.11-.45c.93.35 1.91.58 2.91.71A2 2 0 0122 16.92z" />
+          </svg>
+          <div className="contact-text">
+            <span className="contact-label">Phone</span>
+            <span className="contact-value">{data.contact.phone}</span>
           </div>
-        ))}
+        </div>
+
+        <div className="contact-item">
+          <svg className="contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <div className="contact-text">
+            <span className="contact-label">Email</span>
+            <span className="contact-value"><a href={`mailto:${data.contact.email}`}>{data.contact.email}</a></span>
+          </div>
+        </div>
+
+        <div className="contact-item">
+          <svg className="contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+          </svg>
+          <div className="contact-text">
+            <span className="contact-label">Portfolio</span>
+            <span className="contact-value"><a href={data.contact.portfolio.href} target="_blank" rel="noreferrer">{data.contact.portfolio.label}</a></span>
+          </div>
+        </div>
+
+        <div className="contact-item">
+          <svg className="contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+          <div className="contact-text">
+            <span className="contact-label">GitHub</span>
+            <span className="contact-value"><a href={data.contact.github.href} target="_blank" rel="noreferrer">{data.contact.github.label}</a></span>
+          </div>
+        </div>
+
+        <div className="contact-item">
+          <svg className="contact-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          <div className="contact-text">
+            <span className="contact-label">LinkedIn</span>
+            <span className="contact-value"><a href={data.contact.linkedin.href} target="_blank" rel="noreferrer">{data.name.join(' ')}</a></span>
+          </div>
+        </div>
       </div>
 
       <div className="s-section">
