@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Cta = () => {
   return (
     <div className="cta">
-        <a href={"https://docs.google.com/document/d/1g4ngA6lQtdDUhKYVKpXi9NVKsl44rnTS/export?format=pdf&gid=0"} className='btn'>Download CV</a>
+        <Link to="/resume" target="_blank" rel="noreferrer" className='btn'>View Resume</Link>
         <a href="#contact" className='btn btn-primary'>Let's Talk</a>
     </div>
   )

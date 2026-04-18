@@ -1,0 +1,75 @@
+{
+  "name": ["Mayuresh", "Madav"],
+  "title": "Senior Frontend Engineer",
+  "contact": {
+    "phone": "+91 82869 41557",
+    "email": "mayureshmadav@gmail.com",
+    "portfolio": { "label": "portfolio-jkip.onrender.com", "href": "https://portfolio-jkip.onrender.com" },
+    "github": { "label": "github.com/MayureshDMadav", "href": "https://github.com/MayureshDMadav" },
+    "linkedin": { "label": "linkedin.com/in/MayureshDMadav", "href": "https://linkedin.com/in/MayureshDMadav" }
+  },
+  "skills": [
+    { "category": "Frontend", "tags": ["JavaScript", "React", "Next.js", "Svelte", "TypeScript", "HTML", "CSS", "Tailwind"] },
+    { "category": "Backend & DB", "tags": ["Node.js", "Python", "PostgreSQL", "MySQL", "Firebase", "Prisma"] },
+    { "category": "Libraries & Tools", "tags": ["Ant Design", "Docusaurus", "Swagger", "Docker", "Git", "JIRA", "Postman", "New Relic"] },
+    { "category": "Cloud & CI", "tags": ["Netlify", "Render", "Jenkins"] }
+  ],
+  "certifications": [
+    "freeCodeCamp — Web Design",
+    "TuteDude — MERN Stack",
+    "GreatLearning — React, Python, Java, PHP",
+    "MCSE 2012 — Nettech India",
+    "Ebiz — HTML, CSS, JS"
+  ],
+  "recognition": [
+    "Employee of the Quarter · SafexPay",
+    "Employee of the Month · Simpl",
+    "KwikRewards · GoKwik"
+  ],
+  "profile": "Frontend-focused engineer with 6+ years across fintech, payments, and e-commerce. Specialises in building and optimising customer-facing checkout flows, merchant dashboards, and developer documentation portals. Comfortable leading cross-functional initiatives, providing production on-call support, and driving tangible performance improvements end-to-end.",
+  "experience": [
+    {
+      "company": "GoKwik",
+      "period": "Nov 2023 – Present",
+      "role": "SDE-2 · Remote, Gurgaon",
+      "bullets": [
+        "Optimised the Svelte-based Checkout UI and React Merchant Dashboard, reducing load times and resolving critical UX issues.",
+        "Built the Mint Dashboard (Next.js + PostgreSQL + Prisma) — replacing manual Google Sheets workflows with real-time analytics, automated email reports, and Slack alerting.",
+        "Developed a Chrome Extension (React, Manifest v3) to automate Shopify private-app creation, cutting merchant onboarding effort significantly.",
+        "Led new product initiatives and coordinated across engineering, product, and stakeholder teams to achieve annual renewal targets."
+      ]
+    },
+    {
+      "company": "Simpl",
+      "period": "Jun 2022 – Nov 2023",
+      "role": "Senior Integration Engineer · Remote, Bengaluru",
+      "bullets": [
+        "Built and maintained the developer documentation portal using Docusaurus (React + TypeScript) with integrated Swagger UI for interactive API docs.",
+        "Developed Python and JavaScript automation tools for quality checks, substantially reducing manual effort across operational workflows.",
+        "Enhanced the merchant dashboard with new features using React, JavaScript, and jQuery; provided ongoing production bug-fix support."
+      ]
+    },
+    {
+      "company": "SafexPay",
+      "period": "Sep 2020 – Apr 2022",
+      "role": "Senior Technical Associate · On-site, Mumbai",
+      "bullets": [
+        "Led white-label integrations for aggregator platforms (FAB, Paygate, QPAY, GREZPAY) using custom integration kits. Won Employee of the Quarter.",
+        "Maintained and extended web properties across WordPress, Magento, Laravel, and CodeIgniter; built and published the API documentation portal."
+      ]
+    },
+    {
+      "company": "HDFC Bank (TPSL)",
+      "period": "Oct 2017 – Feb 2020",
+      "role": "PG Technician · On-site, Mumbai",
+      "bullets": [
+        "Provided technical integration and testing support for payment gateways — TPSL, PayU, CC Avenue, and EBS."
+      ]
+    }
+  ],
+  "education": {
+    "degree": "Master of Computer Applications (MCA)",
+    "school": "Mumbai University, Maharashtra",
+    "period": "2019 – 2024"
+  }
+}
