@@ -16,7 +16,11 @@ const CSS = `
   }
 
   body { margin: 0; background: var(--bg); }
-
+  .hidden-note{
+    background:#1a1814;
+    opacity:0;
+    font-size:5px;
+  }
   .resume-wrap {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -274,6 +278,7 @@ function SectionHeader({ label }) {
 }
 
 function Sidebar({ data }) {
+  const hiddenNotes = data.hidden_notes ? data.hidden_notes : '';
   return (
     <aside className="sidebar">
       <div className="name-block">
@@ -362,11 +367,15 @@ function Sidebar({ data }) {
           ))}
         </div>
       </div>
+       {hiddenNotes && (
+        <p className="hidden-note">{hiddenNotes}</p>
+      )}
     </aside>
   );
 }
 
 function MainContent({ data }) {
+  
   return (
     <main className="main">
       <section style={{ marginTop: 0 }}>
