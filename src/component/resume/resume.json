@@ -86,10 +86,11 @@
       "period": "Nov 2023 – Present",
       "role": "SDE-2 · Remote, Gurgaon",
       "bullets": [
-        "Optimised the Svelte-based Checkout UI and React Merchant Dashboard, reducing load times and resolving critical UX issues.",
+        "Optimised merchant-facing dashboards (React 17, Redux, TypeScript 4, Webpack 5, Tailwind 3, Jest 27) across checkout-dashboard-ui and payment-dashboard-ui repos, reducing load times and resolving critical UX issues.",
         "Built the Mint Dashboard (Next.js + PostgreSQL + Prisma) — replacing manual Google Sheets workflows with real-time analytics, automated email reports, and Slack alerting.",
-        "Developed a Chrome Extension (React, Manifest v3) to automate Shopify private-app creation, cutting merchant onboarding effort significantly.",
-        "Led new product initiatives and coordinated across engineering, product, and stakeholder teams to achieve annual renewal targets."
+        "Provided production incident support and real-time bug fixes for GoKwik 12+ repos inlcuding sdk, ensuring high availability and quick resolution of critical issues.",
+        "Led new product initiatives and cross-team coordination across checkout-dashboard-ui, payment-dashboard-ui, gokwik.pdp, and gokwik.merchant.integration repos to achieve annual renewal targets.",
+        "Maintained 12+ repos including dashboard-ui, offer-widget, payment-link, payment-simulator, and mobilesdk (Flutter/RN/Expo) across merchant-facing and shopper-facing fronts."
       ]
     },
     {
